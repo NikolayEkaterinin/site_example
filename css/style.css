@@ -1,0 +1,349 @@
+/* Open Sans стиль */
+.open-sans-normal {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* нормальный вес */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.open-sans-bold {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* жирный */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Oswald стиль */
+.oswald-normal {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* нормальный вес */
+  font-style: normal;
+}
+
+.oswald-bold {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* жирный */
+  font-style: normal;
+}
+
+
+.header {
+  background-image: url("../img/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 63vh;
+}
+
+
+.text__h1 {
+  color: white;
+  font-size: 64px;
+  font-family: "Oswald", sans-serif; /* Подключение шрифта */
+  font-weight: 500; /* Medium */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+/*Уменьшаем текст для телефонного формата*/
+
+.text__h4 {
+  color: white;
+  font-size: 13px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.header__text {
+  margin-top: 9vh !important;
+  justify-content: center;
+}
+
+
+/* Основной стиль для кнопки */
+button.burger {
+  display: flex; /* Flexbox для выравнивания линий по вертикали */
+  flex-direction: column; /* Располагаем линии вертикально */
+  justify-content: center; /* Центрируем линии по вертикали */
+  align-items: center; /* Центрируем линии по горизонтали */
+  width: 50px; /* Ширина кнопки */
+  height: 50px; /* Высота кнопки */
+  background: #F7654A; /* Цвет фона кнопки */
+  border: none; /* Без рамки */
+  cursor: pointer; /* Курсор указывает, что это кнопка */
+  padding: 0; /* Убираем внутренние отступы */
+  margin-top: 0.5vh; /* Отступ сверху */
+  right: 20%; /* Отступ справа от окна */
+  z-index: 1000; /* Чтобы кнопка была поверх других элементов */
+  transition: transform 0.3s ease; /* Плавный переход для анимации */
+  outline: none;
+  opacity: 0.8;
+}
+
+
+/* Эффект вращения при нажатии */
+button.burger:active {
+  transform: rotate(180deg); /* Вращаем на 90 градусов */
+  outline: none;
+}
+
+button.burger:focus {
+  outline: none; /* Убираем рамку при фокусе */
+}
+
+/* Убираем рамку при наведении на кнопку */
+button.burger:hover {
+  outline: none;
+  box-shadow: none; /* Убираем тень на hover */
+}
+
+/* Стиль для линий кнопки */
+.burger__line {
+  width: 40%; /* Ширина линии (40% от ширины контейнера) */
+  height: 4px; /* Высота линии */
+  background-color: #ffffff; /* Цвет линии */
+  border-radius: 2px; /* Скругление углов для линий */
+  margin: 1px 0; /* Отступы между линиями (1px сверху и снизу) */
+}
+
+@media (max-width: 822px) {
+  .burger {
+    right: 1vh !important; /* Убираем ошибку, теперь 'right' работает с !important */
+  }
+
+  #dropdown-menu.dropdown-menu {
+    opacity: 0.97 !important;
+  }
+
+  .text__h1 {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 371px) {
+  .text__h1 {
+    font-size: 24px !important;
+  }
+
+  #dropdown-menu.dropdown-menu {
+    opacity: 0.97 !important;
+  }
+
+  .years h1 {
+    font-size: 24px !important;
+  }
+
+  .years h4 {
+    font-size: 16px !important;
+  }
+
+  .years p {
+    font-size: 8px !important;
+  }
+}
+
+/* Стили для выпадающего меню (если необходимо, можно кастомизировать) */
+#dropdown-menu.dropdown-menu {
+  background-color: #564d4c; /* Цвет фона меню, если нужно */
+  border-radius: 5px; /* Скругленные углы для меню */
+  opacity: 0.7;
+}
+
+.dropdown-item {
+  color: #fff !important; /* Цвет текста в пункте меню */
+  font-family: "Oswald", serif;
+  font-weight: normal;
+  font-size: 26px;
+  letter-spacing: 1px;
+
+}
+
+.dropdown-item:hover {
+  background-color: #FF5733; /* Цвет фона при наведении на элементы меню */
+}
+
+.logo {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-top: 0.5vh;
+}
+
+
+.header__title {
+  display: flex; /* Включаем флекс-контейнер для расположения элементов */
+  justify-content: space-between; /* Располагаем элементы с отступом по бокам */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  width: 100%; /* Ширина на всю доступную область */
+}
+
+.numbers {
+  background: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  margin-top: -8% !important;
+
+
+}
+
+.years {
+  margin: 7%;
+  text-align: center;
+
+}
+
+.years h1 {
+  color: #F7654A;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-size: 72px;
+}
+
+.years h4 {
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.years p {
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  color: #999999;
+  font-size: 18px;
+}
+
+.project {
+  display: flex;
+  margin-top: 8vh;
+  justify-content: center; /* Центрирование всех элементов внутри */
+  align-items: center; /* Центрирование по вертикали */
+  flex-direction: column; /* Размещение элементов в столбик */
+}
+
+.project .row {
+  display: flex; /* Добавляем flex для центрирования текста */
+  justify-content: center; /* Горизонтальное выравнивание */
+  align-items: center; /* Вертикальное выравнивание */
+  width: 100%; /* Убедитесь, что ширина занимает всю строку */
+}
+
+.project .image__project {
+  display: flex;
+  margin-top: 4vh;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.project .project__arena {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5% !important;
+}
+
+@media (max-width: 822px) {
+  .project .image__project {
+    flex-direction: column;
+  }
+
+}
+
+#line_project {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  width: 55px;
+  height: 6px;
+}
+
+.project h2 {
+  font-size: 36px;
+  color: #404149;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center; /* Центрирование текста внутри h2 */
+}
+
+.image__project h3 {
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #404149;
+  font-size: 24px;
+  margin-bottom: 1.5vh;
+}
+.image__project p {
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #999999;
+}
+
+/*request*/
+.request {
+  display: flex;
+  align-content: center;
+  background: #FF5733;
+  justify-content: space-between;
+
+  padding: 2% 17%;
+  text-transform: uppercase;
+
+}
+
+.request h1 {
+  font-size: 48px;
+  color: white;
+  font-family: "Oswald", serif;
+  font-weight: bold;
+  margin-bottom: 3%;
+  letter-spacing: 2px;
+}
+
+.request h3 {
+  font-size: 24px;
+  color: white;
+  font-family: "Oswald", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.request .request__button {
+  display: flex; /* Устанавливаем Flexbox */
+  justify-content: space-between; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  background: #ffffff;
+  width: 175px;
+  height: 49px;
+  margin-top: 3.5%;
+}
+
+.request__button img {
+  margin-left: 15px;
+  height: 20px;
+  width: 20px;
+}
+
+.request__button p {
+  display: flex;
+  align-content: center;
+  margin-top: 13px;
+  margin-right: 12px;
+  text-transform: uppercase;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+}
+
+@media (max-width: 822px) {
+  .request{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
