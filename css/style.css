@@ -36,7 +36,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 63vh;
+  height: 740px;
 }
 
 
@@ -60,7 +60,7 @@
 }
 
 .header__text {
-  margin-top: 9vh !important;
+  margin-top: 5vh !important;
   justify-content: center;
 }
 
@@ -454,4 +454,30 @@ button.burger:hover {
   height: 250px;
   background: #F7F7F7;
   padding: 5% 5%;
+}
+
+/*Portfolio*/
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio .row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.portfolio .image__portfolio {
+  display: flex;
+  flex-direction: row;
+  height: 407px;
+  width: 480px;
+}
+
+.image__portfolio img {
+  height: 407px;
+  width: 480px;
 }
