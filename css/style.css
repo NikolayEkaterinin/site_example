@@ -221,7 +221,7 @@ button.burger:hover {
 .project {
   display: flex;
   margin-top: 8vh;
-  justify-content: center; /* Центрирование всех элементов внутри */
+
   align-items: center; /* Центрирование по вертикали */
   flex-direction: column; /* Размещение элементов в столбик */
 }
@@ -396,4 +396,62 @@ button.burger:hover {
     display: flex;
   }
 
+}
+
+/* services*/
+
+/* services */
+.services {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.services .row {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет переносить элементы, если места не хватает */
+  justify-content: space-between; /* Равномерное распределение элементов */
+  gap: 16px; /* Задаёт отступы между элементами */
+  margin-bottom: 16px;
+}
+
+.services .service {
+  display: flex;
+  flex-direction: column; /* Внутри элемента изображение и текст выстраиваются вертикально */
+  align-items: center; /* Центрирование внутри каждого .service */
+  width: calc(33.33% - 16px); /* Устанавливаем ширину для 3 элементов в строке, с учётом отступов */
+  box-sizing: border-box; /* Учитываем padding и border в расчёте ширины */
+}
+
+.service img {
+  width: 60px;
+  height: 40px;
+  margin-bottom: 10px; /* Отступ между изображением и текстом */
+}
+
+.services__title h1 {
+  text-align: center;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  font-family: "Oswald", serif;
+  flex-direction: 500;
+}
+
+.services h3 {
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", serif;
+  flex-direction: 500;
+
+  padding: 10%;
+}
+
+.service {
+  width: 350px;
+  height: 250px;
+  background: #F7F7F7;
+  padding: 5% 5%;
 }
