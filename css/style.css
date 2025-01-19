@@ -436,7 +436,7 @@ button.burger:hover {
   margin-bottom: 36px;
   text-transform: uppercase;
   font-family: "Oswald", serif;
-  flex-direction: 500;
+  font-weight: 500;
 }
 
 .services h3 {
@@ -444,7 +444,7 @@ button.burger:hover {
   text-align: center;
   text-transform: uppercase;
   font-family: "Oswald", serif;
-  flex-direction: 500;
+  font-weight: 500;
 
   padding: 10%;
 }
@@ -480,4 +480,74 @@ button.burger:hover {
 .image__portfolio img {
   height: 407px;
   width: 480px;
+}
+
+/*question*/
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+
+}
+
+.question h1 {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-weight: 500;
+  margin-bottom: 3vh;
+}
+
+.question .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2vh;
+}
+
+.dropdown .dropdown__text {
+  cursor: pointer;
+  font-size: 24px;
+  font-family: Oswald, sans-serif;
+  font-weight: 500; /* Исправлено flex-direction: 500 на font-weight */
+  color: #F7654A;
+}
+
+.dropdown__content {
+  display: none; /* Скрыто по умолчанию */
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  color: #999999;
+  min-width: 200px;
+}
+
+/* Анимация для плавного появления */
+.dropdown__content.show {
+  display: block;
+  animation: slide-down 0.3s ease;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Стили для поворота изображения */
+.dropdown__icon {
+  transition: transform 0.3s ease; /* Плавный поворот */
+}
+
+.dropdown__icon.rotate {
+  transform: rotate(-90deg); /* Поворот на 90 градусов против часовой */
 }

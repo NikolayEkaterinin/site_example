@@ -193,12 +193,42 @@
   </div>
 </div>
 
+<!--Модуль question-->
+
+<div class="question">
+  <h1>ответы на вопросы</h1>
+  <div class="dropdown col-md-6">
+    <div class="dropdown__text">
+      <img src="img/Polygon.svg" class="dropdown__icon">
+      РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</div>
+    <div class="dropdown__content">Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</div>
+  </div>
+    <div class="dropdown col-md-6">
+    <div class="dropdown__text">
+      <img src="img/Polygon.svg" class="dropdown__icon">
+      РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</div>
+    <div class="dropdown__content">Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</div>
+  </div>
+    <div class="dropdown col-md-6">
+    <div class="dropdown__text">
+      <img src="img/Polygon.svg" class="dropdown__icon">
+      РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</div>
+    <div class="dropdown__content">Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</div>
+  </div>
+    <div class="dropdown col-md-6">
+    <div class="dropdown__text">
+      <img src="img/Polygon.svg" class="dropdown__icon">
+      РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</div>
+    <div class="dropdown__content">Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</div>
+  </div>
+</div>
 
 <!-- Подключаем Bootstrap JS и Popper (для работы с выпадающими меню) -->
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+
   // Получаем элементы кнопки и меню
   const burgerBtn = document.getElementById('dropdownMenuButton');
   const menu = document.getElementById('menu');
@@ -208,6 +238,31 @@
     // Переключаем класс 'open' для отображения/скрытия меню
     menu.classList.toggle('open');
   });
+// Находим все элементы с классом dropdown__text
+const dropdownTexts = document.querySelectorAll('.dropdown__text');
+
+// Добавляем обработчик клика для каждого элемента
+dropdownTexts.forEach((dropdownText) => {
+  dropdownText.addEventListener('click', function () {
+    // Находим следующий элемент с классом dropdown__content
+    const content = this.nextElementSibling;
+
+    // Переключаем видимость текста
+    if (content) {
+      content.classList.toggle('show');
+    }
+
+    // Находим изображение внутри текущего dropdown__text
+    const icon = this.querySelector('img');
+
+    // Переключаем класс rotate для изображения
+    if (icon) {
+      icon.classList.toggle('rotate');
+    }
+  });
+});
+
+
 </script>
 
 
