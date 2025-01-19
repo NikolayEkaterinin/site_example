@@ -278,6 +278,7 @@ button.burger:hover {
   font-size: 24px;
   margin-bottom: 1.5vh;
 }
+
 .image__project p {
   font-family: "Open Sans", serif;
   font-weight: 300;
@@ -341,9 +342,58 @@ button.burger:hover {
 }
 
 @media (max-width: 822px) {
-  .request{
+  .request {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .request h1 {
+    display: flex;
+
+    font-size: 36px;
+  }
+
+  .request h3 {
+    display: flex;
+    font-size: 16px;
+  }
+
+  .request .request__button {
+    display: flex;
+  }
+
+}
+
+@media (max-width: 372px) {
+  .request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+  }
+
+  .request h1 {
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .request h3 {
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+
+  }
+
+  .request .request__button {
+    display: flex;
   }
 
 }
