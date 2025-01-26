@@ -290,7 +290,7 @@ button.burger:hover {
 .request {
   display: flex;
   align-content: center;
-  background: #FF5733;
+  background: #F7654A;
   justify-content: space-between;
 
   padding: 2% 17%;
@@ -660,4 +660,75 @@ button.burger:hover {
   font-weight: 500;
   font-size: 21px;
   color: #F7654A;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contact_item {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_data {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  height: 191px;
+  align-items: center;
+}
+
+.contact h2 {
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.contact_title {
+  margin-top: 20px;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 24px;
+  color: #999999;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact_info {
+
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#vip {
+  color: #F7654A; !important;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #404149;
+  color: white;
+  width: 100%;
+  height: 82px;
+  padding: 0 300px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 300;
+
 }
