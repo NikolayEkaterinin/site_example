@@ -551,3 +551,113 @@ button.burger:hover {
 .dropdown__icon.rotate {
   transform: rotate(-90deg); /* Поворот на 90 градусов против часовой */
 }
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #404149;
+  width: 1920px;
+  height: 364px;
+
+}
+
+.partner h1 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.partner__header {
+  margin-top: 90px;
+}
+
+.partner__modul {
+  display: flex;
+  flex-direction: row;
+}
+
+.partner__item {
+  display: flex;
+  margin: 30px 30px;
+}
+
+.partner__item img {
+  width: 170px;
+  height: 61px;
+
+}
+
+@media (max-width: 822px) {
+  .partner {
+    width: auto;
+    height: auto;
+  }
+
+  .partner__modul {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 5%;
+}
+
+.review__modul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.review__item {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 259px;
+  margin: 20px;
+}
+
+.review__item img {
+  height: 42px;
+  width: 42px;
+  margin-bottom: 20px;
+
+}
+
+.review__body {
+  background: #F7F7F7;
+  padding: 30px;
+}
+
+.review__text {
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #999999;
+}
+
+.review__item__footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.review__fio h4 {
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.review_org  h4{
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 21px;
+  color: #F7654A;
+}
